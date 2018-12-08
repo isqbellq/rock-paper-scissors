@@ -20,34 +20,34 @@ function getComputerChoice() {
 
 function determineWinner(user, computerChoice) {
 	if (user === computerChoice) {
-		return "Tie.";
+		return "tie.";
 	}
 
 	if (user !== "rock" && user !== "paper" && user !== "scissors") {
-		return "Invalid input.";
+		return "invalid input.";
 	}
 
 	if (user === "rock") {
 		if (computerChoice === "paper") {
-			return "Paper beats rock; the computer won.";
+			return "paper beats rock; the computer won.";
 		} else if (computerChoice === "scissors") {
-			return "Scissors beat rock; you won.";
+			return "scissors beat rock; you won.";
 		}
 	}
 
 	if (user === "paper") {
 		if (computerChoice === "scissors") {
-			return "Scissors beat paper; the computer won.";
+			return "scissors beat paper; the computer won.";
 		} else if (computerChoice === "rock") {
-			return "Paper beats rock; you won.";
+			return "paper beats rock; you won.";
 		}
 	}
 
 	if (user === "scissors") {
 		if (computerChoice === "rock") {
-			return "Rock beats scissors; the computer won.";
+			return "rock beats scissors; the computer won.";
 		} else if (computerChoice === "paper") {
-			return "Scissors beat paper; you won.";
+			return "scissors beat paper; you won.";
 		}
 	}
 }

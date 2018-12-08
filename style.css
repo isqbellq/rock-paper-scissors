@@ -7,6 +7,8 @@
  	height: 100%;
  	width: 100%;
  	font-family: 'Maven Pro', sans-serif;
+ 	font-size: 1.1em;
+ 	background-color: #eee;
 }
  header {
  	background-color: #222;
@@ -28,13 +30,35 @@
  	font-size: 35px;
  }
  input {
- 	margin: 60px 10px 40px;
- }
+ 	text-align: center;
+	margin: 60px 10px 40px;
+ 	position: relative;
+	font-size: 1.3em;
+	border: #222 solid 3px;
+	padding: 3px;
+	display: inline-block;
+	border-radius: 40px;
+	background-color: #f3f3f3;
+	/* outer shadow */
+	box-shadow: 0px 0px 5px #333;
+	-webkit-box-shadow: 0px 0px 5px #333;
+	-moz-box-shadow: 0px 0px 5px #333;
+	-o-box-shadow: 0px 0px 5px #333;	
+	/* inner shadow */
+	-moz-box-shadow:    inset 0 0 4px #444;
+	-webkit-box-shadow: inset 0 0 4px #444;
+	box-shadow:         inset 0 0 4px #444;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	font-style: italic;
+	opacity: 0.7;
+	font-weight: lighter;
+}
  button {
  	background-color: #222;
  	color: #ddd;
- 	width: 28px;
- 	height: 28px;
+ 	width: 32px;
+ 	height: 32px;
  	border-radius: 50%;
  	border-width: 0;
  	font-size: 20px;
@@ -45,3 +69,12 @@
  	font-weight: bold;
  	font-style: italic;
  }
+
+@media (max-width: 576px) {
+	h1, input {
+  		width: 70%;
+  	}
+  	header {
+  		height: 24%;
+  	}
+}
