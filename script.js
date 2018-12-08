@@ -58,6 +58,7 @@ function playGame() {
 	document.getElementById("user-choice").innerHTML = user;
 	document.getElementById("computer-choice").innerHTML = computerChoice;
 	document.getElementById("winner").innerHTML = determineWinner(user, computerChoice);
+	window.scrollTo(0,document.body.scrollHeight);
 }
 
 function go() {
