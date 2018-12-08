@@ -30,6 +30,17 @@
  input {
  	margin: 60px 10px 40px;
  }
+ button {
+ 	background-color: #222;
+ 	color: #ddd;
+ 	width: 28px;
+ 	height: 28px;
+ 	border-radius: 50%;
+ 	border-width: 0;
+ 	font-size: 20px;
+ 	text-shadow:  1px 1px 10px #000;
+ 	cursor: pointer;
+ }
  #user-choice, #computer-choice, #winner {
  	font-weight: bold;
  	font-style: italic;
