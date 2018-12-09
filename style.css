@@ -24,7 +24,6 @@
 	-webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
 	-moz-box-shadow:    0px 3px 5px rgba(100, 100, 100, 0.49);
 	box-shadow:         0px 3px 5px rgba(100, 100, 100, 0.49);
-
  }
  h1 {
  	margin: 0;
@@ -35,7 +34,7 @@
  }
  input {
  	text-align: center;
-	margin: 60px 10px 40px;
+	margin: 60px 10px 40px 0;
  	position: relative;
 	font-size: 1.3em;
 	border: #222 solid 3px;
@@ -43,17 +42,12 @@
 	display: inline-block;
 	border-radius: 40px;
 	background-color: #f3f3f3;
-	/* outer shadow */
 	box-shadow: 0px 0px 5px #333;
 	-webkit-box-shadow: 0px 0px 5px #333;
 	-moz-box-shadow: 0px 0px 5px #333;
 	-o-box-shadow: 0px 0px 5px #333;	
-	/* inner shadow */
-	-moz-box-shadow:    inset 0 0 4px #444;
-	-webkit-box-shadow: inset 0 0 4px #444;
-	box-shadow:         inset 0 0 4px #444;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
 	font-style: italic;
 	opacity: 0.7;
 	font-weight: lighter;
@@ -66,15 +60,18 @@
  	border-radius: 50%;
  	border-width: 0;
  	font-size: 20px;
- 	text-shadow:  1px 1px 10px #000;
  	cursor: pointer;
+ 	box-shadow: 0px 0px 5px #333;
+	-webkit-box-shadow: 0px 0px 5px #333;
+	-moz-box-shadow: 0px 0px 5px #333;
+	-o-box-shadow: 0px 0px 5px #333;
  }
  #user-choice, #computer-choice, #winner {
  	font-weight: bold;
  	font-style: italic;
  }
  .results {
- 	padding-bottom: 35px;
+ 	padding: 0 10px 35px;
  }
 
 @media (max-width: 576px) {
